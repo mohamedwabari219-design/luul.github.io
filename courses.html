@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Courses — Learnify</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Learnify</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page">
+      <h1>All Courses</h1>
+      <p>Filter and browse courses across categories.</p>
+
+      <div class="course-list">
+        <article class="course-list-item">
+          <h3>Web Development</h3>
+          <p>Build responsive websites using HTML, CSS and JavaScript.</p>
+          <p><a class="btn-secondary" href="course-detail.html">View course</a></p>
+        </article>
+
+        <article class="course-list-item">
+          <h3>Data Science</h3>
+          <p>Explore data analysis, visualization, and machine learning basics.</p>
+          <p><a class="btn-secondary" href="course-detail.html">View course</a></p>
+        </article>
+
+        <article class="course-list-item">
+          <h3>UI/UX Design</h3>
+          <p>Learn user research, wireframing, and prototyping.</p>
+          <p><a class="btn-secondary" href="course-detail.html">View course</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Learnify</p>
+    </div>
+  </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const btn = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  btn.addEventListener('click', function () {
+    nav.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>

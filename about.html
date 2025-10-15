@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Anfac Academy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Anfac Academy</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page">
+      <h1>About Anfac Academy</h1>
+      <p>Anfac Academy are an innovative online education platform 
+        built to help students, professionals, and lifelong learners master in-demand skills.
+Our mission is simple: to make learning easier, engaging, and meaningful
+ through well-structured courses and real-world practice.</p>
+
+      <h2>Our Values</h2>
+      <ul>
+        <li>Accessibility</li>
+        <li>Practical learning</li>
+        <li>Community support</li>
+      </ul>
+
+      <h2>Instructor Team</h2>
+      <p>Our instructors are passionate educators
+         and professionals from fields such as technology, design, and business.
+They combine academic knowledge with real industry experience, 
+ensuring every lesson is practical and up-to-date.
+At Learnify, you’ll learn not just theory — but also how to apply it in real-life projects.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Anfac Academy</p>
+    </div>
+  </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const btn = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  btn.addEventListener('click', function () {
+    nav.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>
